@@ -49,12 +49,15 @@ public class MainActivity extends AppCompatActivity {
 
         }
         else{
+            engrVer.clearAnimation();
+            engrVerd.clearAnimation();
+            engrBlau.clearAnimation();
             engrVer.setVisibility(View.INVISIBLE);
             engrVerd.setVisibility(View.INVISIBLE);
             engrBlau.setVisibility(View.INVISIBLE);
             ull.setVisibility(View.INVISIBLE);
             donut.setVisibility(View.INVISIBLE);
-            anim.cancel();
+
         }
 
     }
