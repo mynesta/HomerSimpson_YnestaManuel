@@ -5,11 +5,15 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
     private ImageView titol,engrVer,engrVerd,engrBlau,ull,donut;
+    Animation anim;
+    Animation anim2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
             engrBlau.setVisibility(View.VISIBLE);
             ull.setVisibility(View.VISIBLE);
             donut.setVisibility(View.VISIBLE);
+            anim = AnimationUtils.loadAnimation(this, R.anim.animaciotween);
+            anim2 = AnimationUtils.loadAnimation(this, R.anim.animaciotween2);
+            engrVerd.startAnimation(anim2);
+            engrVer.startAnimation(anim);
+            engrBlau.startAnimation(anim);
 
         }
         else{
@@ -45,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             engrBlau.setVisibility(View.INVISIBLE);
             ull.setVisibility(View.INVISIBLE);
             donut.setVisibility(View.INVISIBLE);
+            anim.cancel();
         }
 
     }
