@@ -129,6 +129,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.207"
-        app:srcCompat="@drawable/donut" />
+        app:srcCompat="@drawable/donut"
+        android:onClick="musica"/>
 
 </android.support.constraint.ConstraintLayout>
