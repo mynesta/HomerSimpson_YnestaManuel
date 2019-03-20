@@ -6,13 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ImageView
+        android:id="@+id/imageHomer"
+        android:layout_width="260dp"
+        android:layout_height="504dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="23dp"
+        android:contentDescription="@string/homer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageTitul"
+        app:srcCompat="@drawable/homer_simpson" />
+
+    <ImageView
+        android:id="@+id/imageEngVer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/engranatge_vermell"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageEngBlau"
+        app:layout_constraintEnd_toStartOf="@+id/imageEngVerd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/engranatge_vermell" />
+
+    <ImageView
+        android:id="@+id/imageEngVerd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="21dp"
+        android:contentDescription="@string/engranatge_verd"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageEngBlau"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageEngVer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/engranatge_verd" />
+
+    <ImageView
+        android:id="@+id/imageEngBlau"
+        android:layout_width="45dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="393dp"
+        android:contentDescription="@string/engranatge_blau"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/imageEngVerd"
+        app:layout_constraintStart_toStartOf="@+id/imageEngVer"
+        app:layout_constraintTop_toBottomOf="@+id/imageEngVer"
+        app:srcCompat="@drawable/engranatge_blau" />
+
+    <ImageView
+        android:id="@+id/imageTitul"
+        android:layout_width="165dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/titul"
+        android:src="@drawable/animation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085"
+         />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">HomerSimpson_YnestaManuel</string>
+    <string name="homer">homer</string>
+    <string name="engranatge_vermell">Engranatge_Vermell</string>
+    <string name="engranatge_verd">Engranatge_verd</string>
+    <string name="engranatge_blau">engranatge_blau</string>
+    <string name="titul">titul</string>
 </resources>
